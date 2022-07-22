@@ -3,7 +3,9 @@
     <h2 class="visually-hidden">Contacts</h2>
     <ul class="locations list">
       <li class="locations__item">
-        <p class="locations__pre-title">Cafe</p>
+        <div class="locations__pre-title-wrap">
+          <p class="locations__pre-title">Cafe</p>
+        </div>
         <h3 class="locations__title">Chicago</h3>
         <p class="locations__desc">
           Fusce ut velit laoreet, tempus arcu molestie vulputate
@@ -38,7 +40,9 @@
         </ul>
       </li>
       <li class="locations__item">
-        <p class="locations__pre-title">Foodtruck</p>
+        <div class="locations__pre-title-wrapper">
+          <p class="locations__pre-title">Foodtruck</p>
+        </div>
         <h3 class="locations__title">Los Angeles</h3>
         <p class="locations__desc">
           Fusce ut velit laoreet, tempus arcu molestie vulputate
@@ -73,7 +77,9 @@
         </ul>
       </li>
       <li class="locations__item">
-        <p class="locations__pre-title">Cafe</p>
+        <div class="locations__pre-title-wrap">
+          <p class="locations__pre-title">Cafe</p>
+        </div>
         <h3 class="locations__title">New York</h3>
         <p class="locations__desc">
           Fusce ut velit laoreet, tempus arcu molestie vulputate
@@ -108,7 +114,15 @@
         </ul>
       </li>
     </ul>
-    <button tipe="button" class="btn contacts__btn">Our Locations</button>
-    <button tipe="button" class="btn contacts__btn">Franchise</button>
+    <button tipe="button" class="btn contacts__btn contacts__btn--red">
+      Our Locations<svg class="btn__icon btn__icon--red" width="10" height="16">
+        <use href="./images/icons.svg#icon-pointer"></use>
+      </svg>
+    </button>
+    <button tipe="button" class="btn contacts__btn contacts__btn--white">
+      Franchise<svg class="btn__icon btn__icon--white" width="10" height="16">
+        <use href="./images/icons.svg#icon-pointer"></use>
+      </svg>
+    </button>
   </div>
 </section>
