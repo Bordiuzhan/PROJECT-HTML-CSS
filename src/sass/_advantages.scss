@@ -87,12 +87,11 @@
   text-transform: uppercase;
   color: #d41443;
 
-  margin-bottom: 4px;
-
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.14;
     letter-spacing: 0.04em;
+    margin-bottom: 10px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -109,6 +108,14 @@
   height: 50px;
   background-image: url('/src/images/milk.png');
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
 }
 
 .second-icon::before {
@@ -118,6 +125,14 @@
   height: 50px;
   background-image: url('/src/images/apple.png');
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
 }
 
 .thirth-icon::before {
@@ -128,6 +143,14 @@
   background-image: url('/src/images/heart.png');
 
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
 }
 
 .abvantages-list__description {
@@ -135,15 +158,18 @@
   font-size: 12px;
   line-height: 170%;
   color: #000000;
+  margin-top: 4px;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 174%;
+    margin-top: 13px;
   }
 
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 176%;
     letter-spacing: 0.02em;
+    margin-top: 16px;
   }
 }
