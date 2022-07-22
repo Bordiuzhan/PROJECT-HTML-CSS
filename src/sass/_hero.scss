@@ -1,6 +1,6 @@
 .hero {
   height: 100vw;
-  background: #ffb8ca;
+  background: var(--ice-cream-bg-color);
   padding-top: 194px;
 
   position: relative;
@@ -27,7 +27,7 @@
 }
 .hero__title span {
   font-size: 48px;
-  color: #d41443;
+  color: var(--accent-color);
   z-index: 3;
 }
 
@@ -57,26 +57,26 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-around;
-  color: #ffffff;
+  color: var(--white-bg-color);
   padding: 9px 14px;
   border-radius: 20px;
 }
 
 .hero-list__button--wite {
-  background: #ffffff;
-  color: #d41443;
+  background: var(--white-bg-color);
+  color: var(--accent-color);
 }
 
 .hero-list__button--red {
-  background: #d41443;
-  color: #ffffff;
+  background: var(--accent-color);
+  color: var(--white-bg-color);
 }
 
 .hero__circle {
   width: 346px;
   height: 344px;
   border-radius: 50%;
-  background: #ffa5ba;
+  background: var(--ice-cream-medium-color);
 
   position: absolute;
   top: 83px;
