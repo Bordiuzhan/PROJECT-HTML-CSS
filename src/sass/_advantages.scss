@@ -2,9 +2,11 @@
   display: block;
   background-color: #fff5f6;
   padding-bottom: 60px;
+  padding-top: 40px;
 
   @media screen and (min-width: 768px) {
-    padding-bottom: 120px;
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -24,10 +26,14 @@
 
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -70,6 +76,8 @@
 }
 
 .abvantages-list__heading {
+  font-family: 'Titan One';
+  font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.13;
@@ -78,6 +86,18 @@
   color: #d41443;
 
   margin-bottom: 4px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
 }
 
 .first-icon::before {
@@ -122,5 +142,6 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 176%;
+    letter-spacing: 0.02em;
   }
 }
