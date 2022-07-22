@@ -56,7 +56,7 @@
   max-width: 230px;
 
   @media screen and (min-width: 768px) {
-    max-width: 180px;
+    max-width: 177px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -85,7 +85,7 @@
   display: block;
   width: 33px;
   height: 50px;
-  background-image: url('/src/images/milk.svg');
+  background-image: url('/src/images/milk.png');
   margin-bottom: 16px;
 }
 
@@ -94,7 +94,7 @@
   display: block;
   width: 49px;
   height: 50px;
-  background-image: url('/src/images/apple.svg');
+  background-image: url('/src/images/apple.png');
   margin-bottom: 16px;
 }
 
@@ -102,8 +102,8 @@
   content: '';
   display: block;
   width: 46px;
-  height: 52px;
-  background-image: url('/src/images/heart.svg');
+  height: 50px;
+  background-image: url('/src/images/heart.png');
 
   margin-bottom: 16px;
 }
