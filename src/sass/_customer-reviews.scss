@@ -3,8 +3,7 @@
 // }
 // .customer-reviews__title {
 // }
-// .image-slider {
-// }
+
 // .swiper-container {
 // }
 // .image-slider__wriper {
@@ -17,12 +16,15 @@
 // }
 // .swiper-pagination {
 // }
-.image-slider__image {
-    text-align: center;
-}
+// .image-slider__image {
+
+// }
 .image-slider__image img {
     max-width: 100%;
 }
 .image-slider__text {
     background-color: rgba(250, 250, 250, 1);
+}
+.image-slider {
+    text-align: center;
 }
