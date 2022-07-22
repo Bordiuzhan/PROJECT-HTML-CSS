@@ -63,11 +63,13 @@
 
   @media screen and (min-width: 768px) {
     max-width: 177px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
     margin-right: 80px;
     max-width: 288px;
+    margin-bottom: 0;
   }
 }
 
