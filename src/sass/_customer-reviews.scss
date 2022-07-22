@@ -16,9 +16,10 @@
 // }
 // .swiper-pagination {
 // }
-// .image-slider__image {
-
-// }
+.image-slider__image {
+display: block;
+text-align: center;
+}
 .image-slider__image img {
     max-width: 100%;
 }
