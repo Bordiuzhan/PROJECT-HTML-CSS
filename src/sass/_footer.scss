@@ -1,8 +1,8 @@
 .footer {
-  padding-top: 121px;
-  padding-bottom: 4px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 121px;
+  padding-bottom: 4px;
   display: flex;
   background-color: var(--light-bg-color);
 }
@@ -53,20 +53,67 @@
   height: 32px;
   border-radius: 50%;
   background-color: #fea5bb;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer__icon {
   color: var(--light-text-color);
   &--github {
-    width: 19px;
-    height: 19px;
+    width: 18.82px;
+    height: 18.82px;
   }
   &--telegram {
-    width: 19px;
-    height: 15px;
+    width: 19.2px;
+    height: 14.93px;
   }
   &--facebook {
-    width: 9px;
-    height: 19px;
+    width: 8.8px;
+    height: 19.2px;
   }
+}
+
+.footer__contact {
+  padding-bottom: 40px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: right;
+  color: var(--primary-text-color);
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.footer__tel {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: var(--secondary-text-color);
+  }
+}
+
+.copyright-wrap {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__copyright {
+  // display: block;
+  width: 150px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  color: var(--secondary-text-color);
 }

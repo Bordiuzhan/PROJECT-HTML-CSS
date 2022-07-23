@@ -1,5 +1,5 @@
 .header {
-  background-color: #ffb8ca;
+  background-color: var(--ice-cream-bg-color);
   @include tablet {
     padding-top: 32px;
   }
@@ -14,6 +14,9 @@
 .logo {
   display: block;
   padding: 8px 0;
+  @include desktop {
+    margin-right: 128px;
+  }
 }
 
 .menu-open-btn {
@@ -78,7 +81,7 @@
 .main-btn.header-btn {
   display: none;
   @include tablet {
-    display: block;
+    display: flex;
   }
 }
 
@@ -97,17 +100,16 @@
   text-align: center;
   font-family: inherit;
 
-  color: #d41443;
-  background-color: #ffffff;
+  color: var(--accent-color);
+  background-color: var(--white-bg-color);
   border-color: transparent;
 
-  cursor: pointer;
   transition: all 300ms linear;
 
   &:hover,
   &:focus {
     background-color: #d41342;
-    color: #ffffff;
+    color: var(--light-text-color);
   }
 
   @include tablet {
@@ -118,15 +120,15 @@
   }
 }
 
-.nav-list__item {
+.mob-menu__item {
   border-top: 1px solid #e18298;
 }
 
-.nav-list__item:last-child {
+.mob-menu__item:last-child {
   border-bottom: 1px solid #e18298;
 }
 
-.nav-list__link {
+.mob-menu__link {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -135,5 +137,32 @@
   @include desktop {
     font-size: 16px;
     line-height: 1.31;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+  @include desktop {
+    display: flex;
+  }
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.menu__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--white-bg-color);
+  &:hover,
+  &:focus focus {
+    color: var(--accent-color);
   }
 }
