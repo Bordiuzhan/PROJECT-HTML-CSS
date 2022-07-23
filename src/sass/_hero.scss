@@ -2,18 +2,18 @@
   height: 502px;
   background: var(--ice-cream-bg-color);
   padding-top: 194px;
-  position: relative;
   overflow: hidden;
 
   &__container {
     display: flex;
     justify-content: space-between;
+    position: relative;
   }
   &-img {
     position: absolute;
-    bottom: 0;
-    right: 32px;
-    animation: circle 1.5s;
+    transform: translate(97px, -102px);
+    animation: icecream 2s cubic-bezier(0, 0, 0.58, 1);
+    z-index: 1;
   }
   &__text {
     padding-top: 60px;
@@ -25,16 +25,16 @@
   }
 }
 
-@keyframes circle {
+@keyframes icecream {
   0% {
-    bottom: -100%;
+    transform: translate(50%, 200%);
   }
   90% {
     transform: scale(1.3);
     z-index: 9;
   }
   100% {
-    bottom: 0%;
+    transform: translate(97px, -102px);
   }
 }
 
@@ -42,6 +42,7 @@
   display: flex;
   &--column {
     flex-direction: column;
+    position: relative;
   }
   &--row {
     display: none;
@@ -152,6 +153,5 @@
   background: var(--ice-cream-medium-color);
 
   position: absolute;
-  top: 83px;
-  right: -63px;
+  transform: translate(16px, -111px);
 }
