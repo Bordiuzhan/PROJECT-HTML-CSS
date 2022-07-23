@@ -1,4 +1,6 @@
 .footer {
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 121px;
   padding-bottom: 4px;
   display: flex;
@@ -6,8 +8,6 @@
 }
 
 .footer__pretitle {
-  padding-left: 22px;
-  padding-right: 22px;
   margin-bottom: 16px;
   width: 232px;
   font-family: 'Titan One', cursive;
@@ -19,8 +19,6 @@
 }
 
 .footer__title {
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 40px;
   width: 200px;
   font-family: 'Titan One', cursive;
@@ -33,8 +31,6 @@
 }
 
 .footer-contacts-wrap {
-  padding-left: 20px;
-  padding-right: 20px;
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
@@ -82,8 +78,6 @@
 }
 
 .footer__contact {
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 40px;
   font-weight: 700;
   font-size: 12px;
@@ -105,6 +99,8 @@
 }
 
 .copyright-wrap {
+  padding-left: 0;
+  padding-right: 0;
   padding-top: 16px;
   display: flex;
   justify-content: center;
