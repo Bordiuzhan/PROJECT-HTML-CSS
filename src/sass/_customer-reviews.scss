@@ -14,13 +14,21 @@
 // }
 // .swiper-slide {
 // }
-// .swiper-pagination {
-// }
+.swiper-pagination {
+}
+.swiper-pagination-bullet{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    color: rgba(217, 217, 217, 1);
+}
+
 .image-slider__image {
-display: block;
 text-align: center;
 }
 .image-slider__image img {
+    display: inline-block;
+    text-align: center;
     max-width: 100%;
 }
 .image-slider__text {
