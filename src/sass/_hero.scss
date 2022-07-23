@@ -3,18 +3,28 @@
   background: var(--ice-cream-bg-color);
   padding-top: 194px;
   overflow: hidden;
+  @include tablet {
+    height: 416px;
+    padding-top: 102px;
+  }
 
   &__container {
     display: flex;
     justify-content: space-between;
     position: relative;
   }
+
   &-img {
     position: absolute;
     transform: translate(97px, -102px);
     animation: icecream 2s cubic-bezier(0, 0, 0.58, 1);
     z-index: 1;
+
+    @include tablet {
+      transform: translate(290px, -96px);
+    }
   }
+
   &__text {
     padding-top: 60px;
     width: 114px;
@@ -47,6 +57,10 @@
   &--row {
     display: none;
     flex-direction: row;
+
+    @include tablet {
+      display: flex;
+    }
   }
 }
 
@@ -59,6 +73,11 @@
   display: none;
   margin: 0;
   z-index: 2;
+
+  @include tablet {
+    display: block;
+  }
+
   &__item {
     display: flex;
     flex-direction: column-reverse;
@@ -88,15 +107,24 @@
   text-transform: uppercase;
   text-align: start;
   color: var(--white-bg-color);
-
   margin-bottom: 20px;
   z-index: 3;
+
+  @include tablet {
+    width: 202px;
+    font-size: 22px;
+    line-height: calc(25 / 22);
+  }
 
   & span {
     font-size: 48px;
     line-height: calc(46.32 / 48);
     color: var(--accent-color);
     z-index: 3;
+
+    @include tablet {
+      font-size: 34px;
+    }
   }
 }
 
@@ -131,9 +159,9 @@
   color: var(--accent-color);
   &:hover,
   &:focus {
-    background: var(--accent-color);
-    color: var(--white-bg-color);
+    background: #ecebeb;
     transform: scale(1.1);
+    box-shadow: 0 8px 50px rgb(210 20 67 / 40%);
   }
 }
 
@@ -143,6 +171,7 @@
   &:hover,
   &:focus {
     transform: scale(1.1);
+    box-shadow: 0 8px 50px rgb(210 20 67 / 40%);
   }
 }
 
@@ -154,4 +183,10 @@
 
   position: absolute;
   transform: translate(16px, -111px);
+
+  @include tablet {
+    width: 335px;
+    height: 333px;
+    transform: translate(216px, -111px);
+  }
 }
