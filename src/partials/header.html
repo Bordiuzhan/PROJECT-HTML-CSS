@@ -2,14 +2,26 @@
   <div class="container header__container">
     <nav class="nav">
       <a href=" " class="logo">
-        <img src=" " alt="logotype" />
+        <svg class="logo__icon" width="199" height="50">
+          <use href="/src/images/icons.svg#icon-logo"></use>
+        </svg>
       </a>
+      <ul class="menu list">
+        <li class="menu__item"><a href="" class="menu__link link">Home</a></li>
+        <li class="menu__item"><a href="" class="menu__link link">About us</a></li>
+        <li class="menu__item"><a href="" class="menu__link link">How it’s made?</a></li>
+        <li class="menu__item"><a href="" class="menu__link link">Our products</a></li>
+        <li class="menu__item"><a href="" class="menu__link link">Contact</a></li>
+    </ul>
     </nav>
+
     <div class="buttons-container">
       <button type="button" class="menu-open-btn">
-        0
-        <svg width=" " height=" " aria-label="Переключатель мобильного меню">
-          <use class="menu-open-btn__icon" href=" "></use>
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use
+            class="menu-open-btn__icon"
+            href="/src/images/icons.svg#icon-burger"
+          ></use>
         </svg>
       </button>
       <button class="main-btn header-btn">
@@ -20,28 +32,32 @@
       <button class="main-btn mob-menu__main-btn" type="button">
         Buy now<span class="arrow-btn">&gt;</span>
       </button>
-      <ul class="nav-list">
-        <li class="nav-list__item">
-          <a href=" " class="nav-list__link">Home</a>
-        </li>
-        <li class="nav-list__item">
-          <a href=" " class="nav-list__link">About us</a>
-        </li>
-        <li class="nav-list__item">
-          <a href=" " class="nav-list__link">How it’s made?</a>
-        </li>
-        <li class="nav-list__item">
-          <a href=" " class="nav-list__link">Our products</a>
-        </li>
-        <li class="nav-list__item">
-          <a href=" " class="nav-list__link">Contact</a>
-        </li>
-      </ul>
-      <button type="button" class="menu-close-btn">
-        <svg class="menu-close-btn__icon">
-          <use href=" "></use>
-        </svg>
-      </button>
-    </div>
+        <div class="mob-menu">
+          <button class="main-btn mob-menu__main-btn" type="button">
+            Buy now<span class="arrow-btn">&gt;</span>
+          </button>
+          <ul class="mob-menu__list">
+            <li class="mob-menu__item">
+              <a href=" " class="mob-menu__link">Home</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href=" " class="mob-menu__link">About us</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href=" " class="mob-menu__link">How it’s made?</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href=" " class="mob-menu__link">Our products</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href=" " class="mob-menu__link">Contact</a>
+            </li>
+          </ul>
+          <button type="button" class="menu-close-btn">
+            <svg class="menu-close-btn__icon">
+              <use href=" "></use>
+            </svg>
+          </button>
+        </div>
   </div>
 </header>
