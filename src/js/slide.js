@@ -1,6 +1,6 @@
-new Swiper ('.image-slider', {
-    pagination: { 
-       el: '.swiper-pagination',
-    clickable: true,
-},
+$(document).ready(function () {
+    $('.swiper-wrapper').slick({
+    arrows: false,
+    dots: true,
+    });
 });

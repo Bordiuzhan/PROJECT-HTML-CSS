@@ -1,39 +1,63 @@
-<article class="customer-reviews container">
-    <h2 class="customer-reviews__title" hidden>Customer Reviews</h2>
+<article class="swiper">
+    <h2 class="title" hidden>Customer Reviews</h2>
 <!-- головний контейнер слайдера -->
-    <div class="image-slider swiper-container">
+<div class="container">
     <!-- обов'язкова оболонка -->
-    <div class="image-slider__wriper swiper-wrapper">
+    <div class="swiper-container">
         <!-- слайди -->
-        <div class="image-slider__slide swiper-slide">
+        <ul class="swiper-wrapper list">
             <!-- контент всередині слайда -->
-            <div class="image-slider__image">
-                <img src="./images/testimonials.jpg" alt="customer">
+            <li class="swiper-wrapper__link">
+                <picture>
+                    <source
+                    srcset="./images/testimonials-1-1x.png 1x,
+                        ./images/testimonials-1-2x.png 2x"/>
+                    <img class="swiper-wrapper__image"
+                    src="./images/testimonials.jpg"
+                    alt="customer"/>
+                </picture>
+                <div class="swiper-wrapper__content">
                 <p class="image-slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
                 Lorem ipsum primis in nibh vel risus.</p>
-            </div>
-        </div>
-        <div class="image-slider__slide swiper-slide">
+                </div>
+                <p class="image-slider__location">Emily, Los Angeles</p>
+            </li>
             <!-- контент всередині слайда -->
-            <div class="image-slider__image">
-                <img src="./images/testimonials.jpg" alt="customer">
+            <li class="swiper-wrapper__link">
+                <picture>
+                    <source
+                    srcset="./images/testimonials-1-1x.png 1x,
+                        ./images/testimonials-1-2x.png 2x"/>
+                    <img class="swiper-wrapper__image"
+                    src="./images/testimonials.jpg"
+                    alt="customer"/>
+                </picture>
+                <div class="swiper-wrapper__content">
                 <p class="image-slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
-                    Lorem ipsum primis in nibh vel risus.</p>
-            </div>
-        </div>
-        <div class="image-slider__slide swiper-slide">
+                Lorem ipsum primis in nibh vel risus.</p>
+                </div>
+                <p class="image-slider__location">Emily, Los Angeles</p>
+            </li>
             <!-- контент всередині слайда -->
-            <div class="image-slider__image">
-                <img src="./images/testimonials.jpg" alt="customer">
+            <li class="swiper-wrapper__link">
+                <picture>
+                    <source
+                    srcset="./images/testimonials-1-1x.png 1x,
+                        ./images/testimonials-1-2x.png 2x"/>
+                    <img class="swiper-wrapper__image"
+                    src="./images/testimonials.jpg"
+                    alt="customer"/>
+                </picture>
+                <div class="swiper-wrapper__content">
                 <p class="image-slider__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue.
-                    Lorem ipsum primis in nibh vel risus.</p>
-            </div>
-        </div>
+                Lorem ipsum primis in nibh vel risus.</p>
+                </div>
+                <p class="image-slider__location">Emily, Los Angeles</p>
+            </li>
+            </ul>
         <!-- і так далі... -->
     </div>
-        <!-- навігація по слайдам -->
-        <div class="image-slider__slide swiper-pagination"></div>
-    </div>
+</div>
 </article>
 
 
