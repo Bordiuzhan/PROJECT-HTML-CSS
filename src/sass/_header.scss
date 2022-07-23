@@ -1,5 +1,4 @@
 .header {
-  // position: fixed;
   background-color: var(--ice-cream-bg-color);
   @include tablet {
     padding-top: 32px;
@@ -18,6 +17,7 @@
   @include tablet {
     padding: 0;
   }
+  
   @include desktop {
     margin-right: 128px;
   }
@@ -182,5 +182,32 @@
   @include desktop {
     font-size: 16px;
     line-height: 1.31;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+  @include desktop {
+    display: flex;
+  }
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.menu__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--white-bg-color);
+  &:hover,
+  &:focus focus {
+    color: var(--accent-color);
   }
 }
