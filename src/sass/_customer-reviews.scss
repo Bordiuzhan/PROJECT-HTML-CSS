@@ -2,12 +2,12 @@
     padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
-  & .swiper-button-next,
-  & .swiper-button-prev {
-    display: none;
+//   & .swiper-button-next,
+//   & .swiper-button-prev {
+//     display: none;
 
 }
-}
+
 
 .swiper .container{
 padding-left: 20px;
@@ -24,7 +24,7 @@ padding-right: 20px;
     min-width: 280px;
     z-index: -1;
 }
-.image-slider__text {
+.swiper-wrapper__text {
 
     position: relative;
     font-weight: 500;
@@ -60,6 +60,26 @@ padding-right: 20px;
     left: -20px;
 }
 }
+
+.swiper-wrapper__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+.swiper-wrapper__icons:not(last-child){
+margin-left: 10px;
+}
+
+.swiper-wrapper__name {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(26 / 14);
+    text-align: center;
+}
+
+
+
 
 /* Slider */
 
@@ -106,7 +126,7 @@ padding-right: 20px;
     position: relative;
     left: 0;
     top: 0;
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
 
@@ -131,9 +151,7 @@ padding-right: 20px;
     [dir="rtl"] & {
         float: right;
     }
-    img {
-        display: block;
-    }
+    
     &.slick-loading img {
         display: none;
     }
@@ -158,6 +176,41 @@ padding-right: 20px;
         border: 1px solid transparent;
     }
 }
-.slick-arrow.slick-hidden {
-    display: none;
+
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    
 }
+
+.slick-dots li {
+    list-style: none;
+    
+  }
+  
+  .slick-dots li:not(:last-child) {
+    margin-right: 18px;;
+  }
+
+  .swiper-wrapper .slick-dots button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-image: url('../images/icons.svg#icon-ellipses');
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.swiper-wrapper .slick-dots li.slick-active button {
+    background-color: transparent;
+    background-image: url('../images/mobile/home.svg');
+    background-repeat: no-repeat;
+    border-radius: 0%;
+    width: 12px;
+    height: 12px;
+}
+
+
