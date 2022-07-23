@@ -1,7 +1,3 @@
-.container {
-  padding: 0 20px;
-}
-
 .section {
   width: 100%;
   background: var(--light-bg-color);
@@ -36,7 +32,7 @@
   background-image: url(../images/mobile/milk-1x.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: contain;
   width: 100%;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -54,7 +50,7 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: none;
+    background-image: none;
   }
 }
 
@@ -74,7 +70,7 @@
 .image-wrap__text {
   font-weight: 500;
   font-size: 12px;
-  line-height: 162%;
+  line-height: 1.62;
   max-width: 190px;
   width: 100%;
   margin-bottom: 40px;
@@ -95,9 +91,7 @@
   padding-right: 37px;
   border: none;
   padding-left: 37px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s linear;
 
   &:hover,
   &:focus {
