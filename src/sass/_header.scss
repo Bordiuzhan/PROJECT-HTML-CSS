@@ -14,9 +14,46 @@
 .logo {
   display: block;
   padding: 8px 0;
+  @include tablet {
+    padding: 0;
+  }
+  
   @include desktop {
     margin-right: 128px;
   }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: none;
+  @include desktop {
+    display: flex;
+  }
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.menu__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--white-bg-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-open-btn {
@@ -30,58 +67,8 @@
   @include tablet {
     margin-right: 32px;
   }
-}
-
-.menu-close-btn {
-  width: 18px;
-  height: 18px;
-  padding: 4px;
-  background-color: transparent;
-  border: none;
-  border-radius: 50%;
-  position: absolute;
-  top: 24px;
-  right: 34px;
-}
-
-.arrow-btn {
-  margin-left: 18px;
-  padding-top: 4px;
-}
-
-.buttons-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mob-menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
-  width: 100%;
-  padding: 64px 0;
-  z-index: 10;
-  box-shadow: rgba(0, 0, 0, 0.25);
-  transform: translateX(100%);
-  transition: all 500ms linear;
-}
-
-.mob-menu.is-open {
-  transform: translateY(0);
-}
-
-.mob-menu__main-btn {
-  margin: 0 auto;
-  width: 186px;
-  margin-bottom: 20px;
-}
-
-.main-btn.header-btn {
-  display: none;
-  @include tablet {
-    display: flex;
+  @include desktop {
+    display: none;
   }
 }
 
@@ -117,6 +104,64 @@
   }
   @include desktop {
     width: 160px;
+  }
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  padding: 64px 0;
+  background-color: var(--ice-cream-rich-color);
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.25);
+  transform: translateX(100%);
+  transition: all 300ms linear;
+}
+
+.mob-menu.is-open {
+  transform: translateY(0);
+}
+
+.mob-menu__main-btn {
+  margin: 0 auto;
+  width: 186px;
+  margin-bottom: 20px;
+}
+
+.arrow-btn {
+  margin-left: 18px;
+  padding-top: 4px;
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 34px;
+  width: 18px;
+  height: 18px;
+  padding: 4px;
+  background-color: transparent;
+  border: none;
+  // border-radius: 50%;
+}
+
+// .no-scroll {
+//   overflow: hidden;
+// }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.main-btn.header-btn {
+  display: none;
+  @include tablet {
+    display: flex;
   }
 }
 
