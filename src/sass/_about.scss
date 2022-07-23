@@ -41,6 +41,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    background-size: cover;
     background-image: url(../images/desktop/milk-1x.png);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -82,8 +83,6 @@
 }
 
 .button {
-  display: flex;
-  align-items: center;
   background: var(--white-bg-color);
   border-radius: 22px;
   padding-bottom: 15px;
