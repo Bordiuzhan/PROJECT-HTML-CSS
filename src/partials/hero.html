@@ -1,27 +1,53 @@
 <section class="hero">
-  <div class="container">
-    <div class="hero-wrap">
+  <div class="container hero__container">
+    <div class="hero__wrap hero__wrap--column">
       <h1 class="hero__title">
         ice cream made with
         <span>passion</span>
       </h1>
-      <ul class="hero-list">
+      <ul class="hero-list list">
         <li class="hero-list__item">
-          <a href="" class="hero-list__button hero-list__button--red"
+          <a href="" class="hero-list__button hero-list__button--red link"
             >Products</a
           >
         </li>
         <li class="hero-list__item">
-          <a href="" class="hero-list__button hero-list__button--wite"
+          <a href="" class="hero-list__button hero-list__button--wite link"
             >How it’s made?</a
           >
         </li>
       </ul>
+      <div class="hero__wrap hero__wrap--row">
+        <picture class="">
+          <source
+            srcset="
+              ./images/desktop/jug-1x.png 1x,
+              ./images/desktop/jug-2x.png 2x
+            "
+            media="(min-width: 320px)"
+          />
+          <img src="./images/desktop/jug-1x.png" alt="milk" />
+        </picture>
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+      </div>
     </div>
+    <ul class="hero-counter list">
+      <li class="hero-counter__item">cafes<span>16</span></li>
+      <li class="hero-counter__item">food trucks<span>24</span></li>
+    </ul>
     <div class="hero__circle"></div>
     <picture class="hero-img">
-      <source srcset="# 1x, # 2x" media="(min-width: 320px)" />
-      <img src="#" alt="ice-cream" />
+      <source
+        srcset="
+          ./images/mobile/icecream-1x.png 1x,
+          ./images/mobile/icecream-2x.png 2x
+        "
+        media="(min-width: 320px)"
+      />
+      <img src="./images/mobile/icecream-1x.png" alt="ice-cream" />
     </picture>
   </div>
 </section>
