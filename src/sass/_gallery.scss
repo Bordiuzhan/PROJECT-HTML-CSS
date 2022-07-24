@@ -3,13 +3,33 @@
   background-image: linear-gradient(
     to bottom,
     var(--light-bg-color) 20%,
-    #ffffff 20%,
-    #ffffff
+    var(--white-bg-color) 20%,
+    var(--white-bg-color)
   );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+    to bottom,
+    var(--light-bg-color) 57%,
+    var(--white-bg-color) 57%,
+    var(--white-bg-color)
+  );
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+    to bottom,
+    var(--light-bg-color) 20.7%,
+    var(--white-bg-color) 20.7%,
+    var(--white-bg-color)
+  );
+  }
 }
+
+
 .gallery__set {
   display: grid;
 //   width: 320px;
@@ -20,10 +40,17 @@
   padding-left: 0;
   padding-right: 0;
   
+  @media screen and (min-width: 768px) {
+    gap: 6.07px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 8px;
+  }
 }
 .gallery__item {
   border: none;
- background: transparent;
+  background: transparent;
   // &:hover {
   // cursor: pointer;
   // }

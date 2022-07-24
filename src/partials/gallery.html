@@ -1,154 +1,314 @@
 <section class="gallery section">
-    <div class="gallery__set container">
-        <div class="gallery__item gallery__item-big">
-            <picture>
-                <source 
-                    srcset="
-                        ./images/gallery-img-mob/gallery-pic1-mob.png 1x,
-                        ./images/gallery-img-mob/gallery-pic1-mob-2x.png 2x
-                        "
-                        media="(max-width: 768px)"
-                    >
-                    <img src="./images/gallery-img-desktop/gallery-pic1-desktop.png" 
-                    alt="pic1" 
-                    width="283" 
-                    height="283">
-            </picture>
-        </div>
-        <div class="gallery__item gallery__item-2">
-            <picture>
-                <source 
-                    srcset="
-                        ./images/gallery-img-mob/gallery-pic3-mob.png 1x,
-                        ./images/gallery-img-mob/gallery-pic3-mob-2x.png 2x
-                        "
-                        media="(max-width: 768px)"
-                    >
-                    <img src="./images/gallery-img-desktop/gallery-pic3-desktop.png" 
-                    alt="pic2" 
-                    width="138" 
-                    height="138">
-            </picture>
-        </div>
-        <div class="gallery__item gallery__item-3">
-            <picture>
-                <source 
-                    srcset="
-                        ./images/gallery-img-mob/gallery-pic2-mob.png 1x,
-                        ./images/gallery-img-mob/gallery-pic2-mob-2x.png 2x
-                        "
-                        media="(max-width: 768px)"
-                    >
-                    <img src="./images/gallery-img-desktop/gallery-pic2-desktop.png" 
-                    alt="pic3" 
-                    width="138" 
-                    height="138">
-            </picture>
-        </div>
-        <div class="gallery__item gallery__item-4">
-            <picture>
-                <source 
-                    srcset="
-                        ./images/gallery-img-mob/gallery-pic4-mob.png 1x,
-                        ./images/gallery-img-mob/gallery-pic4-mob-2x.png 2x
-                        "
-                        media="(max-width: 768px)"
-                    >
-                    <img src="./images/gallery-img-desktop/gallery-pic4-desktop.png" 
-                    alt="pic4" 
-                    width="138" 
-                    height="138">
-            </picture>
-        </div>
-        <div class="gallery__item gallery__item-5">
-            <picture>
-                <source 
-                    srcset="
-                        ./images/gallery-img-mob/gallery-pic5-mob.png 1x,
-                        ./images/gallery-img-mob/gallery-pic5-mob-2x.png 2x
-                        "
-                        media="(max-width: 768px)"
-                    >
-                    <img src="./images/gallery-img-desktop/gallery-pic5-desktop.png" 
-                    alt="pic5" 
-                    width="138" 
-                    height="138">
-            </picture>
-        </div>
-        <div class="gallery__item gallery__item-6">
-            <picture>
-                <source 
-                    srcset="
-                        ./images/gallery-img-mob/gallery-pic6-mob.png 1x,
-                        ./images/gallery-img-mob/gallery-pic6-mob-2x.png 2x
-                        "
-                        media="(max-width: 768px)"
-                    >
-                    <img src="./images/gallery-img-desktop/gallery-pic6-desktop.png" 
-                    alt="pic6" 
-                    width="138" 
-                    height="138">
-            </picture>
-        </div>
-        <div class="gallery__item gallery__item-7">
-            <picture>
-                <source 
-                    srcset="
-                        ./images/gallery-img-mob/gallery-pic7-mob.png 1x,
-                        ./images/gallery-img-mob/gallery-pic7-mob-2x.png 2x
-                        "
-                        media="(max-width: 768px)"
-                    >
-                    <img src="./images/gallery-img-desktop/gallery-pic7-desktop.png" 
-                    alt="pic7" 
-                    width="138" 
-                    height="138">
-            </picture>
-        </div>
-        <div class="gallery__item gallery__item-8">
-            <picture>
-                <source 
-                    srcset="
-                        ./images/gallery-img-mob/gallery-pic8-mob.png 1x,
-                        ./images/gallery-img-mob/gallery-pic8-mob-2x.png 2x
-                        "
-                        media="(max-width: 768px)"
-                    >
-                    <img src="./images/gallery-img-desktop/gallery-pic8-desktop.png" 
-                    alt="pic8" 
-                    width="138" 
-                    height="138">
-            </picture>
-        </div>
-        <div class="gallery__item gallery__item-9">
-            <picture>
-                <source 
-                    srcset="
-                        ./images/gallery-img-mob/gallery-pic10-mob.png 1x,
-                        ./images/gallery-img-mob/gallery-pic10-mob-2x.png 2x
-                        "
-                        media="(max-width: 768px)"
-                    >
-                    <img src="./images/gallery-img-desktop/gallery-pic10-desktop.png" 
-                    alt="pic10" 
-                    width="138" 
-                    height="138">
-            </picture>
-        </div>
-        <div class="gallery__item gallery__item-10">
-            <picture>
-                <source 
-                    srcset="
-                        ./images/gallery-img-mob/gallery-pic9-mob.png 1x,
-                        ./images/gallery-img-mob/gallery-pic9-mob-2x.png 2x
-                        "
-                        media="(max-width: 768px)"
-                    >
-                    <img src="./images/gallery-img-desktop/gallery-pic9-desktop.png" 
-                    alt="pic9" 
-                    width="138" 
-                    height="138">
-            </picture>
-        </div>
+  <div class="gallery__set container">
+    <div class="gallery__item gallery__item-big">
+      <picture>
+        <source
+          srcset="
+            ./images/gallery-img-desktop/gallery-pic1-desktop.png    1x,
+            ./images/gallery-img-desktop/gallery-pic1-desktop-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-tablet/gallery-pic1-tab.png    1x,
+            ./images/gallery-img-tablet/gallery-pic1-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-mob/gallery-pic1-mob.png    1x,
+            ./images/gallery-img-mob/gallery-pic1-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/gallery-img-desktop/gallery-pic1-desktop.png"
+          alt="pic1"
+          width="283"
+          height="283"
+        />
+      </picture>
     </div>
+    <div class="gallery__item gallery__item-2">
+      <picture>
+        <source
+          srcset="
+            ./images/gallery-img-desktop/gallery-pic3-desktop.png    1x,
+            ./images/gallery-img-desktop/gallery-pic3-desktop-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-tablet/gallery-pic3-tab.png    1x,
+            ./images/gallery-img-tablet/gallery-pic3-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-mob/gallery-pic3-mob.png    1x,
+            ./images/gallery-img-mob/gallery-pic3-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/gallery-img-desktop/gallery-pic3-desktop.png"
+          alt="pic3"
+          width="138"
+          height="138"
+        />
+      </picture>
+    </div>
+    <div class="gallery__item gallery__item-3">
+      <picture>
+        <source
+          srcset="
+            ./images/gallery-img-desktop/gallery-pic2-desktop.png    1x,
+            ./images/gallery-img-desktop/gallery-pic2-desktop-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-tablet/gallery-pic2-tab.png    1x,
+            ./images/gallery-img-tablet/gallery-pic2-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-mob/gallery-pic2-mob.png    1x,
+            ./images/gallery-img-mob/gallery-pic2-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/gallery-img-desktop/gallery-pic2-desktop.png"
+          alt="pic2"
+          width="138"
+          height="138"
+        />
+      </picture>
+    </div>
+    <div class="gallery__item gallery__item-4">
+      <picture>
+        <source
+          srcset="
+            ./images/gallery-img-desktop/gallery-pic4-desktop.png    1x,
+            ./images/gallery-img-desktop/gallery-pic4-desktop-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-tablet/gallery-pic4-tab.png    1x,
+            ./images/gallery-img-tablet/gallery-pic4-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-mob/gallery-pic4-mob.png    1x,
+            ./images/gallery-img-mob/gallery-pic4-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/gallery-img-desktop/gallery-pic4-desktop.png"
+          alt="pic4"
+          width="138"
+          height="138"
+        />
+      </picture>
+    </div>
+    <div class="gallery__item gallery__item-5">
+      <picture>
+        <source
+          srcset="
+            ./images/gallery-img-desktop/gallery-pic5-desktop.png    1x,
+            ./images/gallery-img-desktop/gallery-pic5-desktop-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-tablet/gallery-pic5-tab.png    1x,
+            ./images/gallery-img-tablet/gallery-pic5-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-mob/gallery-pic5-mob.png    1x,
+            ./images/gallery-img-mob/gallery-pic5-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/gallery-img-desktop/gallery-pic5-desktop.png"
+          alt="pic5"
+          width="138"
+          height="138"
+        />
+      </picture>
+    </div>
+    <div class="gallery__item gallery__item-6">
+      <picture>
+        <source
+          srcset="
+            ./images/gallery-img-desktop/gallery-pic6-desktop.png    1x,
+            ./images/gallery-img-desktop/gallery-pic6-desktop-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-tablet/gallery-pic6-tab.png    1x,
+            ./images/gallery-img-tablet/gallery-pic6-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-mob/gallery-pic6-mob.png    1x,
+            ./images/gallery-img-mob/gallery-pic6-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/gallery-img-desktop/gallery-pic6-desktop.png"
+          alt="pic6"
+          width="138"
+          height="138"
+        />
+      </picture>
+    </div>
+    <div class="gallery__item gallery__item-7">
+      <picture>
+        <source
+          srcset="
+            ./images/gallery-img-desktop/gallery-pic7-desktop.png    1x,
+            ./images/gallery-img-desktop/gallery-pic7-desktop-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-tablet/gallery-pic7-tab.png    1x,
+            ./images/gallery-img-tablet/gallery-pic7-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-mob/gallery-pic7-mob.png    1x,
+            ./images/gallery-img-mob/gallery-pic7-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/gallery-img-desktop/gallery-pic7-desktop.png"
+          alt="pic7"
+          width="138"
+          height="138"
+        />
+      </picture>
+    </div>
+    <div class="gallery__item gallery__item-8">
+      <picture>
+        <source
+          srcset="
+            ./images/gallery-img-desktop/gallery-pic8-desktop.png    1x,
+            ./images/gallery-img-desktop/gallery-pic8-desktop-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-tablet/gallery-pic8-tab.png    1x,
+            ./images/gallery-img-tablet/gallery-pic8-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-mob/gallery-pic8-mob.png    1x,
+            ./images/gallery-img-mob/gallery-pic8-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/gallery-img-desktop/gallery-pic8-desktop.png"
+          alt="pic8"
+          width="138"
+          height="138"
+        />
+      </picture>
+    </div>
+    <div class="gallery__item gallery__item-9">
+      <picture>
+        <source
+          srcset="
+            ./images/gallery-img-desktop/gallery-pic10-desktop.png    1x,
+            ./images/gallery-img-desktop/gallery-pic10-desktop-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-tablet/gallery-pic10-tab.png    1x,
+            ./images/gallery-img-tablet/gallery-pic10-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-mob/gallery-pic10-mob.png    1x,
+            ./images/gallery-img-mob/gallery-pic10-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/gallery-img-desktop/gallery-pic10-desktop.png"
+          alt="pic10"
+          width="138"
+          height="138"
+        />
+      </picture>
+    </div>
+    <div class="gallery__item gallery__item-10">
+      <picture>
+        <source
+          srcset="
+            ./images/gallery-img-desktop/gallery-pic9-desktop.png    1x,
+            ./images/gallery-img-desktop/gallery-pic9-desktop-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-tablet/gallery-pic9-tab.png    1x,
+            ./images/gallery-img-tablet/gallery-pic9-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery-img-mob/gallery-pic9-mob.png    1x,
+            ./images/gallery-img-mob/gallery-pic9-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./images/gallery-img-desktop/gallery-pic9-desktop.png"
+          alt="pic9"
+          width="138"
+          height="138"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
