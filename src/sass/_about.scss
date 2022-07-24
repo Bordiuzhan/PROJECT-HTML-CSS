@@ -3,6 +3,10 @@
   background: var(--light-bg-color);
   padding-bottom: 40px;
   margin: 0 auto;
+
+  @include tablet {
+    padding-bottom: 60px;
+  }
 }
 
 .about {
@@ -21,37 +25,11 @@
   color: var(--ice-cream-medium-color);
   width: 100%;
   margin-bottom: 15px;
-}
 
-.about__picture-caw {
-  margin-bottom: 40px;
-  display: block;
-}
-
-.image-wrap {
-  background-image: url(../images/mobile/milk-1x.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  width: 100%;
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/mobile/milk-2x.png);
-  }
-
-  @media screen and (min-width: 1200px) {
-    background-size: cover;
-    background-image: url(../images/desktop/milk-1x.png);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/desktop/milk-2x.png);
-    }
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    background-image: none;
+  @include tablet {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 16px;
   }
 }
 
@@ -66,23 +44,84 @@
   color: var(--accent-color);
   width: 100%;
   margin-bottom: 32px;
+
+  @include tablet {
+    font-size: 48px;
+    line-height: 1.14;
+    margin-bottom: 40px;
+  }
+}
+
+.about__picture-caw {
+  display: block;
+  @include mobile {
+    margin-bottom: 40px;
+  }
+  @include tablet {
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
+}
+
+.image-wrap__mobile {
+  background-image: url(../images/mobile/milk-1x.png);
+  background-repeat: no-repeat;
+  background-position: 0% 70px;
+  background-size: contain;
+  width: 100%;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/milk-2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: none;
+  }
+}
+
+.desktop-image-wrap {
+  @media screen and (min-width: 1200px) {
+    background-size: contain;
+    background-image: url(../images/desktop/milk-1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/milk-2x.png);
+    }
+  }
 }
 
 .image-wrap__text {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
-  max-width: 190px;
+  max-width: 220px;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 1.76;
+    max-width: 334px;
+  }
 }
 
 .image-wrap__text-color {
   color: var(--secondary-text-color);
-  margin-bottom: 20px;
+  max-width: 216px;
+
+  @include tablet {
+    max-width: 308px;
+  }
 }
 
-.button {
+.button-block__btn {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--accent-color);
+  font-family: inherit;
   background: var(--white-bg-color);
   border-radius: 22px;
   padding-bottom: 15px;
@@ -96,8 +135,19 @@
   &:focus {
     background-color: #ecebeb;
   }
+  @include tablet {
+    font-size: 16px;
+    line-height: 1.31;
+    margin-top: 10px;
+  }
 }
 
-.button__icon {
+.button-block__icon {
   margin-left: 14px;
+}
+
+.flex {
+  @include tablet {
+    display: flex;
+  }
 }
