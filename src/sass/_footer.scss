@@ -1,24 +1,78 @@
 .footer {
-  padding-top: 121px;
-  padding-bottom: 4px;
-  display: flex;
+  padding-top: 40px;
+  padding-bottom: 3px;
   background-color: var(--light-bg-color);
+
+  @include desktop {
+    padding-top: 121px;
+    padding-bottom: 4px;
+  }
+
+  .container {
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    // @include tablet {
+    //   align-items: flex-end;
+    // }
+  }
 }
 
 .footer__pretitle {
   margin-bottom: 16px;
-  width: 232px;
   font-family: 'Titan One', cursive;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
   color: var(--ice-cream-medium-color);
+
+  @include tablet {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-bottom: 12px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.footer-left-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 232px;
+  @include tablet {
+    width: 340px;
+    margin-bottom: 40px;
+  }
+
+  @include desktop {
+    flex-grow: 1;
+    margin-bottom: 60px;
+  }
+}
+
+.footer-right-wrap {
+  @include tablet {
+    margin-bottom: 59px;
+  }
+
+  @include desktop {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__title {
   margin-bottom: 40px;
-  width: 200px;
   font-family: 'Titan One', cursive;
   font-weight: 400;
   font-size: 34px;
@@ -26,9 +80,20 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--accent-color);
+
+  @include tablet {
+    font-size: 48px;
+    letter-spacing: 0.06em;
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    font-size: 58px;
+    line-height: 1.14;
+  }
 }
 
-.footer-contacts-wrap {
+.footer-soc-wrap {
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
@@ -53,6 +118,11 @@
   background-color: #fea5bb;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  @include tablet {
+    width: 34px;
+    height: 34px;
+  }
+
   &:hover,
   &:focus {
     background-color: var(--accent-color);
@@ -64,25 +134,49 @@
   &--github {
     width: 18.82px;
     height: 18.82px;
+
+    @include tablet {
+      width: 20px;
+      height: 20px;
+    }
   }
   &--telegram {
     width: 19.2px;
     height: 14.93px;
+
+    @include tablet {
+      width: 20.4px;
+      height: 15.87px;
+    }
   }
   &--facebook {
     width: 8.8px;
     height: 19.2px;
+
+    @include tablet {
+      width: 9.35px;
+      height: 20.4px;
+    }
   }
 }
 
 .footer__contact {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.86;
   text-align: right;
   color: var(--primary-text-color);
-  border-bottom: 1px solid #e1e1e1;
+
+  @include tablet {
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .footer__tel {
@@ -94,6 +188,15 @@
   &:hover {
     color: var(--secondary-text-color);
   }
+
+  @include tablet {
+    font-size: 14px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .copyright-wrap {
@@ -103,10 +206,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: 1px solid #e1e1e1;
+
+  @include tablet {
+    padding-top: 8px;
+  }
+
+  @include desktop {
+    padding-top: 7px;
+  }
 }
 
 .footer__copyright {
-  // display: block;
   width: 150px;
 
   font-weight: 700;
@@ -114,4 +225,10 @@
   line-height: 1.52;
   text-align: center;
   color: var(--secondary-text-color);
+
+  @include tablet {
+    width: 100%;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+  }
 }
