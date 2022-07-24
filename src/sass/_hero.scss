@@ -16,7 +16,9 @@
 
   &-img {
     position: absolute;
-    transform: translate(97px, -102px);
+    top: -102px;
+    right: 32px;
+    // transform: translate(97px, -102px);
     animation: icecream 2s cubic-bezier(0, 0, 0.58, 1);
     z-index: 1;
 
@@ -60,7 +62,7 @@
   display: flex;
   &--column {
     flex-direction: column;
-    position: relative;
+    // position: relative;
   }
   &--row {
     display: none;
@@ -211,7 +213,9 @@
   background: var(--ice-cream-medium-color);
 
   position: absolute;
-  transform: translate(16px, -111px);
+  // transform: translate(16px, -111px);
+  bottom: -72px;
+  right: -62px;
 
   @include tablet {
     width: 335px;
