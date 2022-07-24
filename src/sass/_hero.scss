@@ -21,17 +21,25 @@
     z-index: 1;
 
     @include tablet {
-      transform: translate(290px, -96px);
+      transform: translate(290px, -23px);
     }
   }
 
   &__text {
-    padding-top: 60px;
+    padding-top: 40px;
     width: 114px;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
     color: var(--white-bg-color);
+  }
+
+  &__arrow {
+    border: none;
+    padding: 0;
+    width: 18px;
+    border-radius: 50%;
+    margin-top: 7px;
   }
 }
 
@@ -60,18 +68,24 @@
 
     @include tablet {
       display: flex;
+      margin-top: 20px;
     }
   }
 }
 
 .picture {
-  width: 100px;
-  height: 100px;
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+    top: 164px;
+    right: 32px;
+  }
 }
 
 .hero-counter {
   display: none;
-  margin: 0;
+  margin-right: 10px;
   z-index: 2;
 
   @include tablet {
@@ -83,9 +97,11 @@
     flex-direction: column-reverse;
     font-weight: 400;
     font-size: 8px;
-    line-height: 10px;
+    line-height: 1.25;
     text-align: right;
     color: var(--white-bg-color);
+    margin-bottom: 17px;
+
     & span {
       font-family: 'Titan One';
       font-size: 28px;
@@ -93,6 +109,19 @@
       text-align: right;
       letter-spacing: 0.04em;
       color: var(--accent-color);
+      z-index: 1;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: var(--white-bg-color);
+        position: absolute;
+        transform: translate(33px, -37px);
+        z-index: -1;
+      }
     }
   }
 }

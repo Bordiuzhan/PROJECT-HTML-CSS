@@ -28,16 +28,48 @@
               ./images/desktop/jug-1x.png 1x,
               ./images/desktop/jug-2x.png 2x
             "
-            media="(min-width: 320px)"
+            media="(min-width: 1200px)"
           />
-          <img src="./images/desktop/jug-1x.png" alt="milk" />
+          <source
+            srcset="
+              ./images/tablet/jug-1x.png 1x,
+              ./images/tablet/jug-2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img src="./images/tablet/jug-1x.png" alt="milk" />
         </picture>
-        <p class="hero__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-        </p>
+        <div class="hero__wrap hero__wrap--column">
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <button class="hero__arrow">
+            <img
+              srcset="
+                ./images/arrow-right-1x.png 1x,
+                ./images/arrow-right-2x.png 2x
+              "
+              src="./images/arrow-right-1x.png"
+            />
+          </button>
+        </div>
       </div>
       <picture class="hero-img">
+        <source
+          srcset="
+            ./images/desktop/high-icecream-1x.png 1x,
+            ./images/desktop/high-icecream-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/high-icecream-1x.png 1x,
+            ./images/tablet/high-icecream-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
         <source
           srcset="
             ./images/mobile/icecream-1x.png 1x,
@@ -53,5 +85,19 @@
       <li class="hero-counter__item">food trucks<span>24</span></li>
     </ul>
     <div class="hero__circle"></div>
+    <picture class="picture">
+      <source
+        srcset="
+          ./images/desktop/girl-1x.png 1x,
+          ./images/desktop/girl-2x.png 2x
+        "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="./images/tablet/girl-1x.png 1x, ./images/tablet/girl-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img src="./images/tablet/girl-1x.png" alt="milk" />
+    </picture>
   </div>
 </section>
