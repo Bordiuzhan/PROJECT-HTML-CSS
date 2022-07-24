@@ -4,54 +4,55 @@
       <p class="about__label">tradition and love</p>
       <h2 class="about__title">how it’s made?</h2>
     </div>
-    <picture class="about__picture-caw">
-      <source
-        srcset="
-          ./images/desktop/cows-milk-1x.png 1x,
-          ./images/desktop/cows-milk-1x.png 2x
-        "
-        media="(min-width: 1200px)"
-      />
-      <source
-        srcset="
-          ./images/tablet/cows-milk-1x.png 1x,
-          ./images/tablet/cows-milk-1x.png 2x
-        "
-        media="(min-width: 768px)"
-      />
-      <source
-        srcset="
-          ./images/mobile/cows-milk-1x.png 1x,
-          ./images/mobile/cows-milk-1x.png 2x
-        "
-        media="(min-width: 320px)"
-      />
-      <img
-        src="./images/desktop/cows-milk-1x.png"
-        alt="Фото коровы"
-        width="501px"
-      />
-    </picture>
-    <div class="image-wrap">
-      <p class="image-wrap__text">
-        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-        cursus, faucibus lorem eget, egestas eros. <br />
-        Maecenas eleifend erat at justo fringilla.
-      </p>
-      <p class="image-wrap__text image-wrap__text-color">
-        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-        Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-        suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-        tincidunt. <br />
-        <br />
-        Aliquam erat volutpat. Aenean accumsan.
-      </p>
+    <div class="flex desktop-image-wrap">
+      <picture class="about__picture-caw">
+        <source
+          srcset="
+            ./images/desktop/cows-milk-1x.png 1x,
+            ./images/desktop/cows-milk-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/tablet/cows-milk-1x.png 1x,
+            ./images/tablet/cows-milk-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/mobile/cows-milk-1x.png 1x,
+            ./images/mobile/cows-milk-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img src="./images/desktop/cows-milk-1x.png" alt="Фото коровы" />
+      </picture>
+      <div class="image-wrap">
+        <div class="image-wrap__mobile">
+          <p class="image-wrap__text">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
+            justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
+            erat at justo fringilla.
+          </p>
+          <p class="image-wrap__text image-wrap__text-color">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio
+            elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
+            euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras
+            massa nibh, tincidunt.&nbsp;&nbsp;
+          </p>
+          <p class="image-wrap__text image-wrap__text-color">
+            Aliquam erat volutpat. Aenean accumsan.
+          </p>
+        </div>
+        <button class="button-block__btn" type="button">
+          Read more
+          <svg class="button-block__icon" width="6px" height="9px">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
     </div>
-    <button class="button" type="button">
-      Read more
-      <svg class="button__icon" width="6px" height="9px">
-        <use href="./images/icons.svg#icon-Vector"></use>
-      </svg>
-    </button>
   </div>
 </section>
