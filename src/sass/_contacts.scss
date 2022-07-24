@@ -21,12 +21,9 @@
   background-color: var(--ice-coffee-bg-color);
   border-radius: 4px;
 }
-.locations__pre-title-wrapper {
-  margin-bottom: 20px;
+.locations__pre-title-wrap--green {
   width: 130px;
-  text-align: center;
   background-color: var(--milkshakes-bg-color);
-  border-radius: 4px;
 }
 
 .locations__pre-title {
@@ -79,6 +76,14 @@
   color: var(--secondary-text-color);
 }
 
+.connect__link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
 .contacts__btn {
   display: flex;
   align-items: center;
@@ -95,19 +100,17 @@
   padding: 12px 0;
   min-width: 161px;
   border: 0;
-
-  //   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  //   &:hover,
-  //   &:focus {
-  //     background-color: #ffffff;
-  //     color: #d41342;
-  //   }
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    scale 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__btn--red {
   margin-bottom: 10px;
   color: var(--light-text-color);
   background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
 }
 .btn__icon--red {
   margin-left: 12px;
@@ -116,6 +119,12 @@
 .contacts__btn--white {
   color: var(--accent-color);
   background-color: var(--white-bg-color);
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+    color: var(--white-bg-color);
+    transform: scale(1.1);
+  }
 }
 .btn__icon--white {
   margin-left: 15px;
