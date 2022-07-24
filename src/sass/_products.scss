@@ -5,6 +5,7 @@
 
 .products__pretitle {
   font-family: 'Titan One';
+  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
@@ -25,6 +26,7 @@
 
 .products__title {
   font-family: 'Titan One';
+  font-style: normal;
   font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
@@ -93,14 +95,14 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 224px;
     height: 473px;
-    flex-basis: calc((100% - 32px) / 2);
+    // flex-basis: calc(100%-2 * 16px / 2);
     margin: 8px;
   }
 
   @include desktop {
     width: 368px;
     height: 535px;
-    flex-basis: calc((100% - 64px) / 2);
+    // flex-basis: calc(100%-2 * 32px / 2);
     margin: 16px;
   }
 }
