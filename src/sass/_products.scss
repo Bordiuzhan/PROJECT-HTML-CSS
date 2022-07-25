@@ -4,7 +4,7 @@
 }
 
 .products__pretitle {
-  font-family: 'Titan One';
+  font-family: 'Titan One', cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -25,7 +25,7 @@
 }
 
 .products__title {
-  font-family: 'Titan One';
+  font-family: 'Titan One', cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
@@ -52,6 +52,7 @@
 }
 
 .products__list {
+  justify-content: space-between;
   @media screen and (max-width: 767px) {
     margin-bottom: 40px;
   }
@@ -129,7 +130,7 @@
 
 .products__name {
   position: relative;
-  font-family: 'Titan One';
+  font-family: 'Titan One', cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -171,8 +172,6 @@
 }
 
 .products__text {
-  font-family: 'DM Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
@@ -212,10 +211,15 @@
   height: 40px;
   margin-top: 32px;
   margin-bottom: 40px;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    scale 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
     background-color: var(--ice-cream-bg-color);
+    transform: scale(1.1);
+    box-shadow: 0 8px 50px rgb(210 20 67 / 40%);
   }
 
   @include desktop {

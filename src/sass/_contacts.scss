@@ -183,7 +183,9 @@
   padding: 12px 0;
   min-width: 161px;
   border: 0;
-  transition: scale 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    scale 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__btn--red {
   margin-bottom: 10px;
@@ -192,6 +194,7 @@
   &:hover,
   &:focus {
     transform: scale(1.1);
+    box-shadow: 0 8px 50px rgb(210 20 67 / 40%);
   }
   @include tablet {
     min-width: 191px;
@@ -216,6 +219,7 @@
   &:hover,
   &:focus {
     transform: scale(1.1);
+    box-shadow: 0 8px 50px rgb(210 20 67 / 40%);
   }
   @include tablet {
     min-width: 174px;

@@ -136,7 +136,7 @@
     }
 
     & span {
-      font-family: 'Titan One';
+      font-family: 'Titan One', cursive;
       font-size: 28px;
       line-height: calc(32 / 28);
       text-align: right;
@@ -173,7 +173,7 @@
 }
 
 .hero__title {
-  font-family: 'Titan One';
+  font-family: 'Titan One', cursive;
   font-weight: 400;
   font-style: normal;
   width: 225px;
@@ -217,6 +217,10 @@
 
   &__item {
     margin-left: 8px;
+
+    @include desktop {
+      margin-left: 12px;
+    }
   }
 
   &__item:first-child {
@@ -224,7 +228,7 @@
   }
 
   &__button {
-    font-family: 'DM Sans', sans-serif;
+    font-family: inherit;
     font-weight: 400;
     font-size: 8px;
     line-height: calc(10 / 8);
@@ -236,7 +240,8 @@
     padding: 9px 14px;
     border-radius: 20px;
     transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-      scale 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      scale 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     @include desktop {
       font-size: 14px;
       line-height: 1.28;
