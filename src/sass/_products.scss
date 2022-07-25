@@ -52,6 +52,7 @@
 }
 
 .products__list {
+  justify-content: space-between;
   @media screen and (max-width: 767px) {
     margin-bottom: 40px;
   }
@@ -129,7 +130,7 @@
 
 .products__name {
   position: relative;
-  font-family: 'Titan One';
+  font-family: 'Titan One', cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
