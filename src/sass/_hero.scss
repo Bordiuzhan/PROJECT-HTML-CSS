@@ -136,7 +136,7 @@
     }
 
     & span {
-      font-family: 'Titan One';
+      font-family: 'Titan One', cursive;
       font-size: 28px;
       line-height: calc(32 / 28);
       text-align: right;
@@ -173,7 +173,7 @@
 }
 
 .hero__title {
-  font-family: 'Titan One';
+  font-family: 'Titan One', cursive;
   font-weight: 400;
   font-style: normal;
   width: 225px;
@@ -224,7 +224,7 @@
   }
 
   &__button {
-    font-family: 'DM Sans', sans-serif;
+    font-family: inherit;
     font-weight: 400;
     font-size: 8px;
     line-height: calc(10 / 8);
