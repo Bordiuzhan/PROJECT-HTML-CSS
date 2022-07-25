@@ -1,0 +1,27 @@
+<!-- Модальне вікно з формою замовлення -->
+<section class="backdrop-order is-hidden" data-modal-order>
+    <!-- <div class="backdrop is-hidden"> -->
+        <div class="modal-order">
+            <button type="button" class="modal-order-close__btn">
+                <svg width="14" height="14">
+                  <use
+                    class="modal-order-close__icon"
+                    href="/src/images/icons.svg#icon-close"
+                  ></use>
+                </svg>
+            </button>
+            <b class="modal-order__text">Place your order</b>
+            <form class="order-form">
+                <div class="order-form__field">
+                    <label class="order-form__lable" for="user-name">Name</label>
+                    <input class="order-form__input" type="text" name="user-name" id="user-name" />
+                </div>
+                <div class="order-form__field">
+                    <label class="order-form__lable" for="user-tel">Phone</label>
+                    <input class="order-form__input" type="tel" name="user-tel" id="user-tel" />
+                </div>
+                <button type="submit" class="order-form__btn">Submit</button>
+            </form>
+        </div>
+    <!-- </div> -->
+</section>
