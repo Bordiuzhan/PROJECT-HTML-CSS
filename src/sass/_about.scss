@@ -1,14 +1,6 @@
 .section-about {
   width: 100%;
   background: var(--light-bg-color);
-  margin: 0 auto;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 0;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 81px;
-  }
 }
 
 .about {
@@ -18,7 +10,7 @@
 }
 
 .about__label {
-  font-family: 'Titan One';
+  font-family: 'Titan One', cursive;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.16;
@@ -43,7 +35,7 @@
 }
 
 .about__title {
-  font-family: 'Titan One';
+  font-family: 'Titan One', cursive;
   font-weight: 400;
   font-size: 34px;
   line-height: 1.14;
@@ -168,12 +160,15 @@
   padding-right: 37px;
   border: none;
   padding-left: 37px;
-  transition: all 0.3s linear;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    scale 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: -10px;
 
   &:hover,
   &:focus {
     background-color: #ecebeb;
+    transform: scale(1.1);
+    box-shadow: 0 8px 50px rgb(210 20 67 / 40%);
   }
   @media screen and (min-width: 768px) {
     font-size: 16px;
