@@ -3,9 +3,16 @@
   top: 0;
   width: 100%;
   z-index: 10;
-  background-color: var(--ice-cream-bg-color);
+  background-color: transparent;
   @include tablet {
     padding-top: 32px;
+  }
+}
+
+.sticky {
+  background-color: rgba(#ffb8ca, 0.9);
+  @include tablet {
+    padding-top: 10px;
   }
 }
 
