@@ -1,17 +1,67 @@
 .contacts {
   background-color: var(--light-bg-color);
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  background-image: linear-gradient(
+    to bottom,
+    #ffffff,
+    #ffffff 25%,
+    var(--light-bg-color) 20%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  @include tablet {
+    font-size: 14px;
+    padding-top: 80px;
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff,
+      #ffffff 50%,
+      var(--light-bg-color) 20%
+    );
+  }
+  @include desktop {
+    font-size: 16px;
+    padding-top: 120px;
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff,
+      #ffffff 25%,
+      var(--light-bg-color) 20%
+    );
+  }
+}
+
+.container {
+  @include tablet {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 .locations {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 32px;
+  @include tablet {
+    gap: 32px;
+    margin-bottom: 60px;
+  }
 }
 .locations__item {
   background: var(--white-bg-color);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   padding: 40px 32px;
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 64px) / 3);
+  }
+  @include desktop {
+    padding: 40px;
+  }
 }
 
 .locations__pre-title-wrap {
@@ -20,63 +70,98 @@
   text-align: center;
   background-color: var(--ice-coffee-bg-color);
   border-radius: 4px;
+  @include tablet {
+    margin-bottom: 32px;
+  }
 }
-.locations__pre-title-wrapper {
-  margin-bottom: 20px;
+.locations__pre-title-wrap--green {
   width: 130px;
-  text-align: center;
   background-color: var(--milkshakes-bg-color);
-  border-radius: 4px;
 }
 
 .locations__pre-title {
   color: var(--light-text-color);
-
-  font-size: 12px;
-  line-height: 1.83;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
+  @include tablet {
+    font-size: 16px;
+  }
 }
 .locations__title {
   margin-bottom: 8px;
+  font-weight: 500;
   font-size: 12px;
-  line-height: 1.83;
-  letter-spacing: 0.04em;
+  line-height: 1.86;
   color: var(--primary-text-color);
+  @include tablet {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+  @include desktop {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
 }
 .locations__desc {
-  font-size: 12px;
   line-height: 1.5;
   color: var(--secondary-text-color);
+  @include tablet {
+    line-height: 1.66;
+  }
+  @include desktop {
+    line-height: 1.83;
+  }
 }
 
 .locations__desc,
 .schedule {
   padding-bottom: 24px;
+  @include tablet {
+    padding-bottom: 32px;
+  }
 }
 .schedule,
 .connect {
   padding-top: 24px;
   border-top: 1px solid #e1e1e1;
+  @include tablet {
+    padding-top: 32px;
+  }
 }
 .schedule__item:not(:last-child) {
   margin-bottom: 8px;
+  @include tablet {
+    margin-bottom: 12px;
+  }
 }
 .schedule__item-days {
-  font-size: 12px;
-  line-height: 1.83;
   color: var(--primary-text-color);
 }
 .schedule__item-time {
-  font-size: 12px;
-  line-height: 1.83;
-  letter-spacing: 0.04em;
   color: var(--ice-cream-medium-color);
 }
 .connect__item {
-  font-size: 12px;
   line-height: 1.5;
   color: var(--secondary-text-color);
+  @include tablet {
+    line-height: 1.66;
+  }
+  @include desktop {
+    line-height: 1.83;
+  }
+}
+
+.connect__link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.button-conteiner {
+  @include tablet {
+    text-align: center;
+  }
 }
 
 .contacts__btn {
@@ -85,6 +170,9 @@
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
+  @include tablet {
+    display: inline-block;
+  }
 }
 
 .btn {
@@ -95,27 +183,46 @@
   padding: 12px 0;
   min-width: 161px;
   border: 0;
-
-  //   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  //   &:hover,
-  //   &:focus {
-  //     background-color: #ffffff;
-  //     color: #d41342;
-  //   }
+  transition: scale 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__btn--red {
   margin-bottom: 10px;
   color: var(--light-text-color);
   background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+  @include tablet {
+    min-width: 191px;
+    margin-bottom: 0;
+    margin-right: 14.5px;
+  }
+  @include desktop {
+    min-width: 198px;
+    margin-right: 12px;
+  }
 }
 .btn__icon--red {
   margin-left: 12px;
   fill: currentColor;
+  @include tablet {
+    margin-left: 15px;
+  }
 }
 .contacts__btn--white {
   color: var(--accent-color);
   background-color: var(--white-bg-color);
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+  @include tablet {
+    min-width: 174px;
+  }
+  @include desktop {
+    min-width: 168px;
+  }
 }
 .btn__icon--white {
   margin-left: 15px;
