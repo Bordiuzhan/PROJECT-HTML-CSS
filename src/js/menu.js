@@ -14,3 +14,7 @@
     refs.body.classList.toggle('no-scroll');
   }
 })();
+
+$('.mob-menu__item a').click(function () {
+  $('.mob-menu.is-open').removeClass('is-open');
+});
