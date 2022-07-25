@@ -1,20 +1,53 @@
 .swiper {
-    padding-top: 60px;
-  padding-bottom: 60px;
-  text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+    @include tablet {
+        padding-top: 0;
+        padding-bottom: 80px;
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+    @include desktop {
+        padding-top: 60px;
+        padding-bottom: 120px;
+        padding-left: 116px;
+        padding-right: 116px;
+
+    }
 
 }
 
 .swiper-wrapper__picture {
     display: inline-block;
     margin-bottom: 32px;
+    padding-bottom: 0;
+    @include tablet {
+        margin-bottom: 20px;
+    }
+    @include desktop {
+        margin-bottom: 16px;
+    }
+    
 }
+
 .swiper-wrapper__content {
     padding: 43px 58px 26px 65px;
     background-color: #fafafa;
     min-width: 280px;
     z-index: -1;
+    @include tablet {
+        padding: 37px 55px 44px 50px;
+        min-width: 620 px;
+    }
+    @include desktop {
+        padding: 47px 109px 39px 109px;
+        min-width: 968px ;
+    }
+
 }
+
+
 .swiper-wrapper__text {
 
     position: relative;
@@ -23,7 +56,7 @@
     line-height: calc(31 / 12);
     text-align: center;
     letter-spacing: 0.04em;
-  
+
     background-image: 
     linear-gradient(0deg ,#e1e1e1 1.61%, transparent 1.61%,
     transparent 50%,
@@ -33,8 +66,19 @@
     transparent 100%
     );
     background-size: 62px 62px;
-  
+    
     z-index: 1;
+
+    @include tablet {
+        font-size: 14px;
+        line-height: calc(31 / 14);
+        background-size: 60px 60px;
+    }
+    @include desktop {
+        font-size: 16px;
+        line-height: calc(30 / 16);
+    }
+
 
     &::before {
         content: '';
@@ -45,17 +89,33 @@
         width: 54px;
         height: 40px;
         background-image: url('../images/mobile/lapky.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: -1;
-    left: -20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -1;
+        left: -16px;
+
+        @include tablet {
+        left: -42px;
+        }
+        @include desktop {
+            left: -37px;
+        }
 }
+
+
 }
 
 .swiper-wrapper__list {
     display: flex;
     justify-content: center;
     margin-top: 16px;
+
+    @include tablet {
+        margin-top: 4px;
+        }
+        @include desktop {
+            margin-top: 16px;
+        }
 }
 .swiper-wrapper__icons:not(last-child){
 margin-left: 10px;
@@ -67,6 +127,15 @@ margin-left: 10px;
     font-size: 14px;
     line-height: calc(26 / 14);
     text-align: center;
+
+    @include tablet {
+        font-size: 16px;
+        line-height: calc(30/16);
+    }
+    @include desktop {
+        font-size: 20px;
+        line-height: calc(37/20);
+    }
 }
 
 
@@ -173,16 +242,24 @@ margin-left: 10px;
     align-items: center;
     justify-content: center;
     padding: 0;
+    margin-top: 16px;
     
 }
 
 .slick-dots li {
     list-style: none;
-    
+
   }
   
   .slick-dots li:not(:last-child) {
-    margin-right: 18px;;
+    margin-right: 18px;
+
+    @include tablet {
+        margin-right: 18.4px;
+        }
+        @include desktop {
+        margin-right: 18px;
+        }
   }
 
   .swiper-wrapper .slick-dots button {
@@ -202,6 +279,14 @@ margin-left: 10px;
     border-radius: 0%;
     width: 12px;
     height: 12px;
+    @include tablet {
+        width: 12px;
+        height: 10px;
+        }
+        @include desktop {
+            width: 12px;
+            height: 11px;
+        }
 }
 
 
