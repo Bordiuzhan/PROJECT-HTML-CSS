@@ -217,6 +217,10 @@
 
   &__item {
     margin-left: 8px;
+
+    @include desktop {
+      margin-left: 12px;
+    }
   }
 
   &__item:first-child {
@@ -236,7 +240,8 @@
     padding: 9px 14px;
     border-radius: 20px;
     transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-      scale 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      scale 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     @include desktop {
       font-size: 14px;
       line-height: 1.28;
