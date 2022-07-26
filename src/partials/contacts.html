@@ -115,7 +115,11 @@
       </li>
     </ul>
     <div class="button-conteiner">
-      <button type="button" class="btn contacts__btn contacts__btn--red">
+      <button
+        type="button"
+        class="btn contacts__btn contacts__btn--red"
+        data-contacts__modal-open
+      >
         Our Locations<svg class="btn__icon btn__icon--red" width="6" height="9">
           <use href="./images/icons.svg#icon-Vector-w"></use>
         </svg>
@@ -125,6 +129,29 @@
           <use href="./images/icons.svg#icon-Vector"></use>
         </svg>
       </button>
+    </div>
+    <!-- Modal-map -->
+    <div class="backdrop is-hidden" data-contacts__modal-map>
+      <div class="contacts__modal-map">
+        <button
+          type="button"
+          class="btn-position modal-close-btn"
+          data-contacts__modal-close
+        >
+          <svg class="modal-close-btn__icon" width="14" height="14">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <iframe
+          class="iframe"
+          src="https://www.google.com/maps/d/embed?mid=1HJgCLp0bmzjCnX5z0RcJti-mpMT1TVI&ehbc=2E312F"
+          width="640"
+          height="480"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
     </div>
   </div>
 </section>
