@@ -31,7 +31,7 @@
   max-width: 230px;
 
   @media screen and (min-width: 768px) {
-    max-width: 177px;
+    max-width: 250px;
     margin-bottom: 0;
   }
 
@@ -45,19 +45,17 @@
   margin-bottom: 0;
 }
 
-// @keyframes changeColor {
-//   0% {
-//     color: var(--accent-color);
-//   }
-
-//   50% {
-//     color: #ffa5ba;
-//   }
-
-//   100% {
-//     color: var(--accent-color);
-//   }
-// }
+@keyframes change-heading-scale {
+  0% {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(110%);
+  }
+  100% {
+    transform: scale(100%);
+  }
+}
 
 .advantages-list__heading {
   display: block;
@@ -68,11 +66,9 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--accent-color);
+  cursor: pointer;
 
-  animation-name: changeColor;
-  animation-duration: 3000ms;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+  animation: change-heading-scale 3s linear infinite;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
