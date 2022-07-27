@@ -1,5 +1,6 @@
-<section class="section section-about" id="how-its-made">
+<section class="section section-about">
   <div class="flex desktop-image-wrap">
+    <div class="image-wrap__mobile">
     <div class="container">
       <div class="about">
         <p class="about__label">tradition and love</p>
@@ -31,7 +32,6 @@
           <img src="./images/desktop/cows-milk-1x.png" alt="Фото коровы" />
         </picture>
         <div class="image-wrap">
-          <div class="image-wrap__mobile">
             <p class="image-wrap__text">
               Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
               justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
@@ -46,15 +46,44 @@
             <p class="image-wrap__text image-wrap__text-color">
               Aliquam erat volutpat. Aenean accumsan.
             </p>
-          </div>
-          <button class="button-block__btn" type="button">
+         
+          <button data-modal-open-about class="button-block__btn" type="button">
             Read more
             <svg class="button-block__icon" width="6px" height="9px">
               <use href="./images/icons.svg#icon-Vector"></use>
             </svg>
           </button>
+           </div>
+        </div>
+      </div>
+    
+      </div>
+      <div class="about-owerlay is-hidden" data-modal-about>
+          <div class="about-owerlay__modal">
+        <button class="modal__btn-close" data-modal-close-about>
+          <svg width="18" height="18">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+
+        </button>
+        <div class="about-owerlay__wrap-text">
+          <p class="about-owerlay__text-title">about us</p>
+          <p class="about-owerlay__text">Ice-cream provides its customers with the opportunity to test all our products to their taste by arranging free presentations of our products in your workshop.</p>
+        </div>
+        <div>
+          <div class="about-owerlay__circle">
+            <img class="about-owerlay__img" srcset="./images/desktop/milk-modal-1x.png 1x, ./images/desktop/milk-modal-2x.png 2x" src="./images/desktop/milk-modal-1x.png" alt="фото молока">
+              </div>
+                <p class="about-owerlay__text-color">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+Aliquam erat volutpat. Aenean accumsan. </p>
+          </div>
+             <div class="about-owerlay__image">
+              <img class="about-owerlay__image-milk" srcset="./images/desktop/milk-bottom-1x.png 1x, ./images/desktop/milk-bottom-2x.png 2x" src="./images/desktop/ice-cream-modal-1x.png" alt="фото молока" src="./images/desktop/ice-cream-modal-1x.png" alt="фото молока">
+              <img class="about-owerlay__image-ice-cream" srcset="./images/desktop/ice-cream-modal-1x.png 1x, ./images/desktop/ice-cream-modal-2x.png 2x" src="./images/desktop/ice-cream-modal-1x.png" alt="фото мороженого">
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+  <script src="./modal.js"></script>

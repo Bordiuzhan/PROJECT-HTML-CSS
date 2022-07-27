@@ -12,6 +12,49 @@
             </button>
             <b class="modal-order__text">Place your order</b>
             <form class="order-form">
+                <div class="order-form__product">
+                    <div class="order-form__field">
+                        <label class="order-form__lable" for="product">Product</label>
+                        <select class="order-form__input" name="product" id="product">
+                            <optgroup label="ICE CREAM">
+                                <option value="ic1">IceCream-1</option>
+                                <option value="ic2">IceCream-2</option>
+                                <option value="ic3">IceCream-3</option>
+                            </optgroup>                      
+                            <optgroup label="ICE COFFEE">
+                                <option value="cf1">IceCoffee-1</option>
+                                <option value="cf2">IceCoffee-2</option>
+                                <option value="cf3">IceCoffee-3</option>
+                            </optgroup>
+                            <optgroup label="MILKSHAKES">
+                                <option value="ms1">MilkShakes-1</option>
+                                <option value="ms2">MilkShakes-2</option>
+                                <option value="ms3">MilkShakes-3</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="order-form__field">
+                        <label class="order-form__lable" for="number">Number</label>
+                        <input 
+                            class="order-form__input" 
+                            type="number" name="number" 
+                            id="number" 
+                            value="1" 
+                            min="1" 
+                            max="100"
+                        />
+                    </div>
+                </div>                
+                <div class="order-form__field">
+                    <label class="order-form__lable" for="payment">Order payment</label>
+                    <input 
+                        class="order-form__input input-credit-card" 
+                        type="text" 
+                        name="payment" 
+                        id="payment" 
+                        placeholder="Enter credit card number"
+                    />
+                </div>
                 <div class="order-form__field">
                     <label class="order-form__lable" for="user-name">Name</label>
                     <input class="order-form__input" type="text" name="user-name" id="user-name" />
