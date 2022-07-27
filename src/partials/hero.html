@@ -26,20 +26,34 @@
           <source
             srcset="
               ./images/desktop/jug-1x.webp 1x,
-              ./images/desktop/jug-2x.webp 2x,
-              ./images/desktop/jug-1x.png  1x,
-              ./images/desktop/jug-2x.png  2x
+              ./images/desktop/jug-2x.webp 2x
             "
             media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/desktop/jug-1x.png 1x,
+              ./images/desktop/jug-2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
           />
           <source
             srcset="
               ./images/tablet/jug-1x.webp 1x,
-              ./images/tablet/jug-2x.webp 2x,
-              ./images/tablet/jug-1x.png  1x,
-              ./images/tablet/jug-2x.png  2x
+              ./images/tablet/jug-2x.webp 2x
             "
             media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/tablet/jug-1x.png 1x,
+              ./images/tablet/jug-2x.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
           />
           <img src="./images/tablet/jug-1x.png" alt="milk" />
         </picture>
@@ -49,16 +63,23 @@
             eiusmod tempor incididunt ut labore et
           </p>
           <button class="hero__arrow">
-            <img
-              srcset="
-                ./images/arrow-right-1x.webp 1x,
-                ./images/arrow-right-2x.webp 2x,
-                ./images/arrow-right-1x.png  1x,
-                ./images/arrow-right-2x.png  2x
-              "
-              src="./images/arrow-right-1x.png"
-              alt="arrow"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/arrow-right-1x.webp 1x,
+                  ./images/arrow-right-2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/arrow-right-1x.png 1x,
+                  ./images/arrow-right-2x.png 2x
+                "
+                type="image/png"
+              />
+              <img src="./images/arrow-right-1x.png" alt="arrow" />
+            </picture>
           </button>
         </div>
       </div>
@@ -66,29 +87,50 @@
         <source
           srcset="
             ./images/desktop/high-icecream-1x.webp 1x,
-            ./images/desktop/high-icecream-2x.webp 2x,
-            ./images/desktop/high-icecream-1x.png  1x,
-            ./images/desktop/high-icecream-2x.png  2x
+            ./images/desktop/high-icecream-2x.webp 2x
           "
           media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/desktop/high-icecream-1x.png 1x,
+            ./images/desktop/high-icecream-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
         />
         <source
           srcset="
             ./images/tablet/high-icecream-1x.webp 1x,
-            ./images/tablet/high-icecream-2x.webp 2x,
-            ./images/tablet/high-icecream-1x.png  1x,
-            ./images/tablet/high-icecream-2x.png  2x
+            ./images/tablet/high-icecream-2x.webp 2x
           "
           media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/tablet/high-icecream-1x.png 1x,
+            ./images/tablet/high-icecream-2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
         />
         <source
           srcset="
             ./images/mobile/icecream-1x.webp 1x,
-            ./images/mobile/icecream-2x.webp 2x,
-            ./images/mobile/icecream-1x.png  1x,
-            ./images/mobile/icecream-2x.png  2x
+            ./images/mobile/icecream-2x.webp 2x
           "
           media="(min-width: 320px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/mobile/icecream-1x.png 1x,
+            ./images/mobile/icecream-2x.png 2x
+          "
+          media="(min-width: 320px)"
+          type="image/png"
         />
         <img src="./images/mobile/icecream-1x.png" alt="ice-cream" />
       </picture>
@@ -102,15 +144,31 @@
       <source
         srcset="
           ./images/desktop/girl-1x.webp 1x,
-          ./images/desktop/girl-2x.webp 2x,
-          ./images/desktop/girl-1x.png  1x,
-          ./images/desktop/girl-2x.png  2x
+          ./images/desktop/girl-2x.webp 2x
         "
         media="(min-width: 1200px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/desktop/girl-1x.png 1x,
+          ./images/desktop/girl-2x.png 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/png"
+      />
+      <source
+        srcset="
+          ./images/tablet/girl-1x.webp 1x,
+          ./images/tablet/girl-2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp"
       />
       <source
         srcset="./images/tablet/girl-1x.png 1x, ./images/tablet/girl-2x.png 2x"
         media="(min-width: 768px)"
+        type="image/png"
       />
       <img src="./images/tablet/girl-1x.png" alt="milk" />
     </picture>
