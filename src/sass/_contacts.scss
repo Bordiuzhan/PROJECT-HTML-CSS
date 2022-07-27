@@ -24,7 +24,7 @@
 }
 #button:hover {
   cursor: pointer;
-  background-color: #333;
+  background-color: var(--secondary-text-color);
 }
 #button:active {
   background-color: #555;

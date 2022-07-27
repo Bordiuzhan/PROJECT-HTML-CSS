@@ -60,6 +60,9 @@
       width: 26px;
     }
 
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
     &:focus,
     &:hover {
       transform: scale(1.1);
@@ -310,7 +313,7 @@
     padding: 9px 14px;
     border-radius: 20px;
     transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-      scale 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     @include desktop {
       font-size: 14px;
