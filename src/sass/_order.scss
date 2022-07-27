@@ -29,6 +29,7 @@ body.modal-open {
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 30px);
+  max-height: calc(100% - 30px);
   padding: 60px 25px 40px;
   overflow: auto;
 
@@ -48,6 +49,15 @@ body.modal-open {
     transform: translate(-50%, -50%);
     // min-height: 620px;
   }
+}
+
+.modal-franchise::-webkit-scrollbar {
+  width: 5px;
+}
+
+.modal-franchise::-webkit-scrollbar-thumb {
+  background-color: rgb(204, 197, 197);
+  border-radius: 5px;
 }
 
 .modal-order-close__btn,

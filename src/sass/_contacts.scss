@@ -285,8 +285,11 @@
   background-color: #00000033;
   opacity: 1;
   z-index: 10;
-
   transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 .contacts__modal-map {
