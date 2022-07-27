@@ -1,3 +1,6 @@
+<!-- Back to top button -->
+<a id="button"></a>
+
 <section id="contact" class="contacts section">
   <div class="container">
     <h2 class="visually-hidden">Contacts</h2>
@@ -126,7 +129,9 @@
       </button>
       <button
         type="button"
-        class="btn contacts__btn contacts__btn--white" data-modal-open>
+        class="btn contacts__btn contacts__btn--white"
+        data-modal-open
+      >
         Franchise<svg class="btn__icon btn__icon--white" width="6" height="9">
           <use href="./images/icons.svg#icon-Vector"></use>
         </svg>
@@ -156,9 +161,13 @@
       </div>
     </div>
     <!-- Modal-franchise -->
-    <div class="backdrop-order is-hidden" data-modal>
-      <div class="modal-franchise" >
-        <button type="button" class="modal-close__btn" data-modal-close>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-franchise">
+        <button
+          type="button"
+          class="modal-franchise-close__btn"
+          data-modal-close
+        >
           <svg width="14" height="14">
             <use
               class="modal-order-close__icon"
@@ -173,7 +182,7 @@
             <input
               class="order-form__input"
               type="text"
-              name="user-name"
+              name="user-first-name"
               id="user-name"
             />
           </div>
@@ -209,7 +218,6 @@
           <button type="submit" class="order-form__btn">Sent</button>
         </form>
       </div>
-      </div>
-    </section>
+    </div>
   </div>
 </section>
