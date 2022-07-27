@@ -50,10 +50,12 @@ body.modal-open {
     // min-height: 620px;
   }
 }
+.about-owerlay__modal::-webkit-scrollbar,
 .modal-order::-webkit-scrollbar,
 .modal-franchise::-webkit-scrollbar {
   width: 5px;
 }
+.about-owerlay__modal::-webkit-scrollbar-thumb,
 .modal-order::-webkit-scrollbar-thumb,
 .modal-franchise::-webkit-scrollbar-thumb {
   background-color: rgb(204, 197, 197);
