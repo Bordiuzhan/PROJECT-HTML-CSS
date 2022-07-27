@@ -22,8 +22,7 @@ body.modal-open {
   z-index: 10;
 }
 
-.modal-order,
-.modal-franchise {
+.modal-order {
   position: absolute;
   top: 10%;
   left: 50%;
@@ -50,8 +49,7 @@ body.modal-open {
   }
 }
 
-.modal-order-close__btn,
-.modal-franchise-close__btn {
+.modal-order-close__btn {
   position: absolute;
   top: 24px;
   right: 34px;
