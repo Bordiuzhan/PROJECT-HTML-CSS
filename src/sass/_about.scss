@@ -361,6 +361,10 @@
   right: 0;
   z-index: 2;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   @media screen and (max-height: 500px) {
     display: none;
   }
@@ -373,6 +377,10 @@
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 
   @media screen and (min-width: 768px) {
     max-width: 270px;
