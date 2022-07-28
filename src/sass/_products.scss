@@ -71,21 +71,53 @@
 .products__item {
   position: relative;
 
-  background: var(--ice-cream-bg-color);
+  background: var(--ice-coffee-bg-color);
   border-radius: 24px;
   height: 489px;
 
-  /*&::before {
-    content: "";
-    display: block;
-    width: 280px;
-    height: 280px;
-    position: absolute;
-    top: -29%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-image: url(../image/mobile/high-icecream-1x.png);
-  }*/
+  &:first-child {
+    background-color: var(--ice-cream-bg-color);
+  }
+
+  &:last-child {
+    background-color: var(--milkshakes-bg-color);
+  }
+ 
+  // &:first-child::before {
+  //   content: "";
+  //   display: block;
+  //   width: 280px;
+  //   height: 280px;
+  //   position: absolute;
+  //   top: -29%;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   background-image: url(../images/mobile/high-icecream-1x.png);
+  // }
+
+  // &:nth-child(2)::before {
+  //   content: "";
+  //   display: block;
+  //   width: 280px;
+  //   height: 280px;
+  //   position: absolute;
+  //   top: -29%;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   background-image: url(../images/mobile/icecoffee-1x.png);
+  // }
+
+  // &:last-child::before {
+  //   content: "";
+  //   display: block;
+  //   width: 280px;
+  //   height: 280px;
+  //   position: absolute;
+  //   top: -29%;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   background-image: url(../images/mobile/milkshakes-1x.png);
+  // }
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
@@ -115,6 +147,8 @@
   top: -27%;
   left: 50%;
   transform: translateX(-50%);
+
+  z-index: 2;
 
   @include tablet {
     width: 224px;
@@ -200,7 +234,7 @@
   }
 }
 
-.products__link {
+.products__btn {
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -225,5 +259,140 @@
   @include desktop {
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+}
+
+.products__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  height: 100%;
+  padding: 0px 5px;
+
+  border-radius: 24px;
+  overflow: auto;
+
+  @include mobile {
+    padding: 0px 40px;
+  }
+
+  @include tablet {
+    padding: 0px 25px;
+  }
+
+  @include desktop {
+    padding: 0px 60px;
+  }
+}
+
+.description-ice-cream {
+  transform: translateY(100%);
+  opacity: 0;
+  // transition: opacity 500ms linear;
+
+  background-color: var(--ice-cream-bg-color);
+
+  &.open-description {
+    transform: translateY(0);
+    opacity: 1;
+    transition: opacity 500ms linear;
+  }
+}
+
+.ice-cream-btn.open-description {
+  transform: rotate(180deg);
+}
+
+.description-ice-coffee {
+  transform: translateY(100%);
+  opacity: 0;
+  // transition: opacity 500ms linear;
+
+  background: var(--ice-coffee-bg-color);
+
+  &.open-description {
+    transform: translateY(0);
+    opacity: 1;
+    transition: opacity 500ms linear;
+  }
+}
+
+.ice-coffee-btn.open-description {
+  transform: rotate(180deg);
+}
+
+.description-milkshakes {
+  transform: translateY(100%);
+  opacity: 0;
+  // transition: opacity 500ms linear;
+
+  background-color: var(--milkshakes-bg-color);
+
+  &.open-description {
+    transform: translateY(0);
+    opacity: 1;
+    transition: opacity 500ms linear;
+  }
+}
+
+.milkshakes-btn.open-description {
+  transform: rotate(180deg);
+}
+
+.products__description-title {
+  margin-bottom: 20px;
+
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+
+  padding-top: 160px;
+
+  @include tablet {
+    padding-top: 118px;
+  }
+
+  @include desktop {
+    font-size: 20px;
+    line-height: 1.13;
+    padding-top: 165px;
+  }
+}
+
+.products__description-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--light-text-color);
+
+  // margin-top: 70px;
+  // width: 200px;
+  // height: 124px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // overflow: hidden;
+
+  @include tablet {
+    line-height: 1.79;
+    // width: 160px;
+    // height: 150px;
+  }
+
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.75;
+    // width: 245px;
+    // height: 106px;
   }
 }
