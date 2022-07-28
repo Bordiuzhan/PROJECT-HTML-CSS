@@ -218,6 +218,7 @@
       color: var(--accent-color);
       z-index: 1;
       position: relative;
+      animation: change-heading-scale 3s linear infinite;
       @include desktop {
         font-size: 46px;
         line-height: 1.25;
