@@ -1,0 +1,1 @@
+{"mappings":"AAAAA,EAAEC,UAAUC,OAAM,WACdF,EAAE,mBAAmBG,MAAM,CAC3BC,QAAQ,EACRC,MAAM","sources":["src/js/script.js"],"sourcesContent":["$(document).ready(function () {\n    $('.swiper-wrapper').slick({\n    arrows: false,\n    dots: true,\n    \n    });\n});\n"],"names":["$","document","ready","slick","arrows","dots"],"version":3,"file":"index.5ba2985b.js.map"}

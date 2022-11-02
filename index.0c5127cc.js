@@ -1,0 +1,2 @@
+!function(){var e={openModalBtn:document.querySelector(".main-btn"),openModalMobBtn:document.querySelector(".mob-menu__main-btn"),closeModalBtn:document.querySelector(".modal-order-close__btn"),modal:document.querySelector(".backdrop-order")};function o(){document.body.classList.toggle("modal-open"),e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.openModalMobBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)}();
+//# sourceMappingURL=index.0c5127cc.js.map

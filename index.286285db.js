@@ -1,0 +1,2 @@
+!function(){var e={openMenuBtn:document.querySelector(".menu-open-btn"),closeMenuBtn:document.querySelector(".menu-close-btn"),menu:document.querySelector(".mob-menu"),body:document.querySelector("body")};function n(){e.menu.classList.toggle("is-open"),e.body.classList.toggle("no-scroll")}e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",n)}(),$(".mob-menu__item a").click((function(){$(".mob-menu.is-open").removeClass("is-open")}));
+//# sourceMappingURL=index.286285db.js.map
